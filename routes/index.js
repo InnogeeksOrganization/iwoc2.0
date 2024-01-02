@@ -32,6 +32,7 @@ router.get("/", (req, res) => {
 
 // ********************* USER RELATED ROUTES ************************************
 
+
 const Registered = async (id) => {
   const user = await User.findById(id);
   if (user.email) return true;
